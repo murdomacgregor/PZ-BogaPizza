@@ -9,3 +9,5 @@ All additions feature custom-made models and textures.
 Also adds a recipe for Marinara sauce, which is uncraftable in the original game. 
 
 Future updates are planned and currently in the works. 
+
+Visit the mod page on Steam at https://steamcommunity.com/sharedfiles/filedetails/?id=2675786278
