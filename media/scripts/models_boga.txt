@@ -236,6 +236,27 @@ module Base
 		scale   = 0.25,
     	}
 
+	model WorldItem-MilkSteak
+    	{
+        	mesh    = WorldItem_MilkSteak,
+		texture = MilkSteak,
+		scale   = 0.00475,
+    	}
+
+	model WorldItem-GelatinPacket
+    	{
+        	mesh    = WorldItem_GelatinPacket,
+		texture = GelatinPacket,
+		scale   = 0.00475,
+    	}
+
+	model WorldItem-MilkSteakJB
+    	{
+        	mesh    = WorldItem_MilkSteakJB,
+		texture = MilkSteakJB,
+		scale   = 0.00475,
+    	}
+
 	model WorldItem-WhiteSauce
     	{
         	mesh    = WorldItem_WhiteSauce,
@@ -247,6 +268,16 @@ module Base
     	{
         	mesh    = WorldItem_BBQSauce,
 		texture = BBQSauce,
+		scale   = 0.004,
+    	}
+}
+
+module Base 
+{
+		model WorldItem-JellyBeans
+    	{
+        	mesh    = WorldItem_JellyBeans,
+		texture = JellyBeans,
 		scale   = 0.004,
     	}
 }

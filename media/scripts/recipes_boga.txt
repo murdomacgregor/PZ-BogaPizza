@@ -34,7 +34,7 @@ module BogaPizza
     recipe Make Marinara
     {
        EmptyJar=1,
-       CannedTomatoOpen=1,
+       CannedTomatoOpen/Tomato;1,
        Butter;1,
        Salt;1,
        Sugar;1,
@@ -480,6 +480,47 @@ module BogaPizza
         OnCreate:recipe_RumHamSlice,
         Sound:SliceMeat,
         Time:50.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe Milk Steak
+    {
+        Steak,
+        Milk,
+        keep Pot/Saucepan/Kettle,
+
+        Result:MilkSteak,
+        OnCreate:recipe_MilkSteak,
+		Sound:BogaPizza_MilkSteak,
+        Time:150.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+        recipe Make Milk Steak and Jellybeans
+    {
+        MilkSteak,
+        JellyBeans,
+
+        Result:MilkSteakJB,
+        OnCreate:recipe_MilkSteakJB,
+		  Sound:BogaPizza_MilkSteakJB,
+        Time:150.0,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe Make Jelly Beans
+    {
+        SugarBrown/Sugar,
+        GelatinPacket,
+        Water=1,
+
+
+        Result:JellyBeans,
+        OnCreate:recipe_JellyBeans,
+        Time:250.0,
         Category:Cooking,
         OnGiveXP:Recipe.OnGiveXP.Cooking3,
     }

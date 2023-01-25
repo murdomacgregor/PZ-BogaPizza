@@ -360,3 +360,18 @@ table.insert(ProceduralDistributions.list["PizzaKitchenSauce"].items, 10);
 
 table.insert(ProceduralDistributions.list["StoreKitchenSauce"].items, "BogaPizza.BBQSauce");
 table.insert(ProceduralDistributions.list["StoreKitchenSauce"].items, 10);
+
+table.insert(ProceduralDistributions.list["KitchenDryFood"].items, "BogaPizza.GelatinPacket");
+table.insert(ProceduralDistributions.list["KitchenDryFood"].items, 20);
+
+table.insert(ProceduralDistributions.list["FridgeSnacks"].items, "BogaPizza.MilkSteak");
+table.insert(ProceduralDistributions.list["FridgeSnacks"].items, 2);
+
+table.insert(ProceduralDistributions.list["MotelFridge"].items, "BogaPizza.MilkSteak");
+table.insert(ProceduralDistributions.list["MotelFridge"].items, 1);
+
+table.insert(ProceduralDistributions.list["PizzaKitchenFridge"].items, "BogaPizza.MilkSteak");
+table.insert(ProceduralDistributions.list["PizzaKitchenFridge"].items, 1);
+
+table.insert(ProceduralDistributions.list["ServingTrayPizza"].items, "BogaPizza.MilkSteak");
+table.insert(ProceduralDistributions.list["ServingTrayPizza"].items, 1);

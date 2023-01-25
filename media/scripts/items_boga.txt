@@ -283,8 +283,6 @@ module BogaPizza
 		 		   StaticModel 			=   PizzaWhiteSaucedSlice,
    			}
 
-
-
     item PizzaEtna
 	{
 		WorldStaticModel 		=   WorldItem-PizzaEtna,
@@ -886,6 +884,78 @@ module BogaPizza
         	Calories 			= 300,
     }
 
+	item MilkSteak
+	{
+		WorldStaticModel = WorldItem-MilkSteak,
+		DisplayName = Milk Steak,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = MilkSteakIcon,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Salad:10|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:20|Cooked;Burrito:20|Cooked,
+		FoodType = Beef,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 20,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -55,
+		Calories = 330,
+		Carbohydrates = 10,
+		Lipids = 11.65,
+		Proteins = 40,
+	}
+
+	item MilkSteakJB
+	{
+		WorldStaticModel = WorldItem-MilkSteakJB,
+		DisplayName = Milk Steak & Jelly Beans,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.6,
+		Icon = MilkSteakJBIcon,
+		BadCold = true,
+		BadInMicrowave = true,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = Pizza:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Salad:10|Cooked;Roasted Vegetables:20;PastaPot:20;PastaPan:20;RicePot:20;RicePan:20;Taco:20|Cooked;Burrito:20|Cooked,
+		FoodType = Beef,
+		GoodHot = true,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 20,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -55,
+		Calories = 400,
+		Carbohydrates = 27,
+		Lipids = 19.65,
+		Proteins = 41,
+	}
+
+	item GelatinPacket
+	{
+		WorldStaticModel = WorldItem-GelatinPacket,
+		DisplayName = Gelatin Packet,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.005,
+		Icon = GelatinPacketIcon,
+		Packaged = TRUE,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 11,
+		Carbohydrates = 3,
+		Lipids = 0,
+		Proteins = 0,
+		Tags = Gelatin,
+		EvolvedRecipeName = Gelatin,
+		FoodType = Gelatin,
+	}
+
     item WhiteSauce
     {
 	WorldStaticModel = WorldItem-WhiteSauce,
@@ -924,5 +994,27 @@ module BogaPizza
         CantBeFrozen = TRUE,
     }
 
+}
 
+module Base
+{
+
+		item JellyBeans
+	{
+		WorldStaticModel = WorldItem-JellyBeans,
+		DisplayName = Jellybeans,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = JellyBeans,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 0,
+		EvolvedRecipeName = Jellybean,
+	}
 }

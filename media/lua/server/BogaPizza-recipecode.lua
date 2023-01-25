@@ -1,3 +1,20 @@
+Recipe = {}
+Recipe.GetItemTypes = {}
+Recipe.OnCanPerform = {}
+Recipe.OnCreate = {}
+Recipe.OnGiveXP = {}
+Recipe.OnTest = {}
+
+local function addExistingItemType(scriptItems, type)
+	local all = getScriptManager():getItemsByType(type)
+	for i=1,all:size() do
+		local scriptItem = all:get(i-1)
+		if not scriptItems:contains(scriptItem) then
+			scriptItems:add(scriptItem)
+		end
+	end
+end
+
 function recipe_BBQSauce(items, result, player)	
     local inv = player:getInventory();
     inv:AddItem("Base.TinCanEmpty");
@@ -5,7 +22,9 @@ end
 
 function recipe_Marinara(items, result, player)	
     local inv = player:getInventory();
-    inv:AddItem("Base.TinCanEmpty");
+    if player:HasItem("Base.CannedTomato2") 
+        then
+            inv:AddItem("Base.TinCanEmpty");
 end
 
 function recipe_PizzaDough(items, result, player)	
@@ -115,12 +134,24 @@ end
 	function recipe_RumHam(items, result, player)	
     local inv = player:getInventory();
 	end
+
 	
-	
-	function recipe_RumHamSlice(items, result, player)	
+    function recipe_RumHamSlice(items, result, player)	
     local inv = player:getInventory();
-	end
+    end
 	
+function recipe_MilkSteak(items, result, player)	
+    local inv = player:getInventory();
+end
+
+function recipe_JellyBeans(items, result, player)	
+    local inv = player:getInventory();
+end
+
+function recipe_MilkSteakJB(items, result, player)	
+    local inv = player:getInventory();
+end
+
 	
 function recipe_PizzaPepperoni(items, result, player)	
     local inv = player:getInventory();
