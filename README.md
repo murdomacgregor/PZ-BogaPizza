@@ -6,7 +6,7 @@ A mod for Project Zomboid that adds multiple food items including:
 
 All additions feature custom-made models and textures. 
 
-Also adds a recipe for Marinara sauce and jelly beans, which are both uncraftable in the original game. 
+Also adds a recipe for marinara sauce and jelly beans, which are both uncraftable in the original game. 
 
 Future updates are planned and currently in the works. 
 
